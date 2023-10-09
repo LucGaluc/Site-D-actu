@@ -1,0 +1,63 @@
+.news-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+.imgNot {
+    width: 40vh;
+}
+.news-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.news-card p {
+    font-size: 14px;
+    color: black;
+}
+
+.news-card p.source {
+    font-weight: bold;
+}
+
+.news-card p.date {
+    color: black;
+    margin-top: 5px;
+}
+
+.news-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-card a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    .news-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .news-card {
+        width: calc(50% - 10px); /* Pour afficher deux cartes par ligne */
+    }
+}
+
+@media (min-width: 1200px) {
+    .news-card {
+        width: calc(33.33% - 10px); /* 3 cartes sur les écrans plus grands */
+    }
+}

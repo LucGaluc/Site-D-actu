@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin: 2vh 0;
+    color: black;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    color: whitesmoke;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Conteneur des résultats de recherche */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 2vw;
+}
+
+/* Styles spécifiques aux cartes d'actualités (NewsCard) */
+.news-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 5px;
+    width: calc(33.33% - 2vw); /* trois cartes par ligne */
+    box-sizing: border-box; /* inclure la bordure dans la largeur */
+}
+
+.news-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.news-card p {
+    font-size: 1em;
+}
+
+/* Media queries pour la mise en page responsive */
+
+/* Pour les écrans plus petits (moins de 768px de large) */
+@media (max-width: 767px) {
+    .news-card {
+        width: calc(
+            50% - 2vw
+        ); /* Pour afficher au maximum deux cartes par ligne */
+    }
+}
+
+/* Pour les écrans encore plus petits (moins de 480px de large) */
+@media (max-width: 479px) {
+    h1 {
+        font-size: 2em; /* Ajustement de la taille de police pour les écrans très petits */
+    }
+
+    input[type="text"] {
+        font-size: 0.8em; /* Ajustement de la taille de police pour les écrans très petits */
+    }
+
+    button {
+        font-size: 0.8em; /* Ajustement de la taille de police pour les écrans très petits */
+    }
+
+    .news-card {
+        width: 100%; /* Pour occuper toute la largeur sur les écrans très petits */
+    }
+}

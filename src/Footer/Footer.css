@@ -1,0 +1,31 @@
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2% 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* Media queries pour la mise en page responsive */
+
+/* Pour les écrans plus petits (moins de 768px de large) */
+@media (max-width: 767px) {
+    footer {
+        padding: 4% 0;
+    }
+}
+
+/* Pour les écrans encore plus petits (moins de 480px de large) */
+@media (max-width: 479px) {
+    footer {
+        padding: 6% 0;
+    }
+}

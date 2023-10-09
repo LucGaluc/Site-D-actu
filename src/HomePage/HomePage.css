@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    color: black;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styles spécifiques aux cartes d'actualités (NewsCard) */
+.news-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(
+        33.33% - 20px
+    ); /* Pour afficher au maximum trois cartes par ligne */
+    box-sizing: border-box; /* inclure la bordure dans la largeur */
+}
+
+.news-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.news-card p {
+    font-size: 14px;
+}
+
+/* Media queries pour la mise en page responsive */
+
+/* Pour les écrans plus petits (moins de 768px de large) */
+@media (max-width: 767px) {
+    .news-card {
+        width: calc(
+            50% - 20px
+        ); /* Pour afficher au maximum deux cartes par ligne */
+    }
+}
+
+/* Pour les écrans encore plus petits (moins de 480px de large) */
+@media (max-width: 479px) {
+    .news-card {
+        width: 100%;
+    }
+}

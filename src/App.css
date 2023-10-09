@@ -1,0 +1,59 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* Conteneur principal */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Menu de navigation */
+nav {
+    background-color: black;
+    color: whitesmoke;
+    padding: 2%;
+    text-align: center;
+}
+
+/* Liens du menu de navigation */
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 2%;
+    font-size: 2vw;
+}
+
+/* Contenu principal */
+main {
+    flex: 1;
+    padding: 2%;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2%;
+}
+
+/* Media queries pour la mise en page responsive */
+
+/* Pour les écrans plus petits (moins de 768px de large) */
+@media (max-width: 767px) {
+    nav a {
+        font-size: 3vw; /* Ajustement de la taille de police pour les écrans plus petits */
+    }
+}
+
+/* Pour les écrans encore plus petits (moins de 480px de large) */
+@media (max-width: 479px) {
+    nav a {
+        font-size: 4vw; /* Ajustement de la taille de police pour les écrans très petits */
+    }
+}

@@ -1,0 +1,36 @@
+nav {
+    background-color: black;
+    color: whitesmoke;
+    padding: 2%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 2%;
+    font-size: 2vw;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+/* Pour les écrans plus petits (moins de 768px de large) */
+@media (max-width: 767px) {
+    nav {
+        padding: 4%;
+    }
+
+    nav li {
+        font-size: 3vw;
+    }
+}
